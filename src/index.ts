@@ -27,11 +27,11 @@ function writeDataSync<T>(options: Options<T>): void {
     });
 
     return;
-  } else {
-    fs.writeFileSync(options.path, JSON.stringify(options.data, undefined, 2), {
-      encoding: "utf-8",
-    });
   }
+
+  fs.writeFileSync(options.path, JSON.stringify(options.data, undefined, 2), {
+    encoding: "utf-8",
+  });
 
   if (options?.callback) return options?.callback(options.data);
 }

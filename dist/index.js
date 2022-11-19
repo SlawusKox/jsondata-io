@@ -16,15 +16,16 @@ function writeDataSync(options) {
             path: options.path,
         });
         dataArr.push(options.data);
-        console.log(dataArr);
         fs.writeFileSync(options.path, JSON.stringify(dataArr, undefined, 2), {
             encoding: "utf-8",
         });
         return;
     }
-    fs.writeFileSync(options.path, JSON.stringify(options.data, undefined, 2), {
-        encoding: "utf-8",
-    });
+    else {
+        fs.writeFileSync(options.path, JSON.stringify(options.data, undefined, 2), {
+            encoding: "utf-8",
+        });
+    }
     if (options === null || options === void 0 ? void 0 : options.callback)
         return options === null || options === void 0 ? void 0 : options.callback(options.data);
 }
