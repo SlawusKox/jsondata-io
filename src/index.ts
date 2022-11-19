@@ -16,6 +16,19 @@ function readDataSync<T>(options: Options<T>): T | T[] {
 }
 
 function writeDataSync<T>(options: Options<T>): void {
+  if (!(options.data instanceof Array)) {
+    const dataArr = readDataSync<T>({
+      path: options.path,
+    }) as T[];
+
+    dataArr.push(options.data);
+    fs.writeFileSync(options.path, JSON.stringify(dataArr, undefined, 2), {
+      encoding: "utf-8",
+    });
+
+    return;
+  }
+
   fs.writeFileSync(options.path, JSON.stringify(options.data, undefined, 2), {
     encoding: "utf-8",
   });
