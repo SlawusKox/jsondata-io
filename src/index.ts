@@ -22,6 +22,8 @@ function writeDataSync<T>(options: Options<T>): void {
     }) as T[];
 
     dataArr.push(options.data);
+
+    console.log(dataArr);
     fs.writeFileSync(options.path, JSON.stringify(dataArr, undefined, 2), {
       encoding: "utf-8",
     });
