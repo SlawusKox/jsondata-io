@@ -11,6 +11,17 @@ function readDataSync(options) {
 }
 exports.readDataSync = readDataSync;
 function writeDataSync(options) {
+    if (!(options.data instanceof Array)) {
+        const dataArr = readDataSync({
+            path: options.path,
+        });
+        dataArr.push(options.data);
+        console.log(dataArr);
+        fs.writeFileSync(options.path, JSON.stringify(dataArr, undefined, 2), {
+            encoding: "utf-8",
+        });
+        return;
+    }
     fs.writeFileSync(options.path, JSON.stringify(options.data, undefined, 2), {
         encoding: "utf-8",
     });
