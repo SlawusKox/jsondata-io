@@ -36,7 +36,7 @@ Thirdly, **read data** or **write data** to the file.
 
 **Reading data:**
 
-![readData_full](https://user-images.githubusercontent.com/75639924/202826330-d2151b78-51d8-4fca-a492-efbbaa019b54.png)
+![readData_full](https://user-images.githubusercontent.com/75639924/202901285-a8c19cc3-c7b8-4cac-86f4-dbf68c5586a7.png)
 
 **Writing data:**
 
