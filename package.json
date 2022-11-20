@@ -1,5 +1,5 @@
 {
-  "name": "jsondata-io",
+  "name": "@SlawusKox/jsondata-io",
   "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
@@ -19,5 +19,9 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SlawusKox/jsondata-io.git"
   }
 }
