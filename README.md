@@ -48,6 +48,14 @@ Thirdly, **read data** or **write data** to the file.
 
 ![writeData_full_obj](https://user-images.githubusercontent.com/75639924/202826537-85865450-944d-4e54-8ede-1fd1c791acc3.png)
 
+**`type: single`**
+
+![writeData_full_single](https://user-images.githubusercontent.com/75639924/203144158-a34afd62-6016-4905-8db3-c2f904cdca4d.png)
+
+**`type: array`**
+
+![writeData_full_array](https://user-images.githubusercontent.com/75639924/203144486-c7aa1e4d-1d51-4bf9-8f10-41a7192dad85.png)
+
 # THE END
 
 That's it.
