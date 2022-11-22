@@ -8,11 +8,11 @@ JsonData-IO provides IO functionalities, that allows you to read data, and write
 
 JsonData-IO gives you two functions that reads the data:
 
-![readData](https://user-images.githubusercontent.com/75639924/202826237-0555b0cd-87fb-4bf0-8b85-3d01b07e300c.png)
+![readData](https://user-images.githubusercontent.com/75639924/203292860-fb5d4eb7-c724-4e80-b8fe-843d824e457c.png)
 
 And writes the data:
 
-![writeData](https://user-images.githubusercontent.com/75639924/202826252-5f59648e-3a56-4449-a68e-647b446e0854.png)
+![writeData](https://user-images.githubusercontent.com/75639924/203292898-57593aec-e86e-44f1-b9dc-a5f1d2c4ec67.png)
 
 Both of those functions contains an **options** parameter that implements, the **Options** interface.
 Options interface looks like this:
